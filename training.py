@@ -1,6 +1,6 @@
 
 '''
-Laypout template used for NFL data train
+training used for NFL data, Qhacks project
 '''
 
 from __future__ import absolute_import
@@ -33,22 +33,6 @@ def main(argv):
         del x[i][ind:]
     for i in range(len(z)):
         del z[i][ind:]
-    '''
-
-
-    #Checking length for debugging
-    '''
-    print('Lengths')
-    print(len(x))
-    print(len(y))
-    print(len(z))
-    print(len(a))
-
-    print('Number of stats')
-    print(len(headers))
-    print(len(x[0]))
-    print(len(z[0]))
-    print(len(mash[1][0]))
     '''
 
     if len(x) != len(y) or len(z) != len(a) or len(x[0]) != len(z[0]) or len(headers) != len(z[0]):
